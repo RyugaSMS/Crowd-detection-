@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crowd Detection </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+  </head>
+  <body>
+    <header>
+      <h1>CROWD DETECTION</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Welcome to Our Project sample</h2>
+      <p>In this live stream we can see the faces being detected</p>
+   
+    </main>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h3 class="mt-5">Live Streaming</h3>
+                <img src="{{ url_for('video_feed') }}" width="50%">
+            </div>
+         </div>
+    </div>
+    
+    <footer>
+      <p>Copyright &copy; 2023</p>
+    </footer>
+  </body>
+</html>
